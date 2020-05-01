@@ -1,0 +1,8 @@
+<launch>
+<node pkg="my_topics" name="topic_publisher" type="topic_publisher.py" />
+<node pkg="my_topics" name="topic_subscriber" type="topic_subscriber.py" output="screen" />
+<node pkg="my_topics" name="message_publisher" type="message_publisher.py" />
+<node pkg="my_topics" name="message_subscriber" type="message_subscriber.py" output="screen" />
+<node pkg="my_topics" name="doubled_subscriber" type="doubled_subscriber.py" output="screen" />
+<node pkg="my_topics" name="doubler" type="doubler.py" />
+</launch>

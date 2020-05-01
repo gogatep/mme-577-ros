@@ -1,0 +1,4 @@
+<launch>
+<node pkg="my_actions" name="simple_action_server" type="simple_action_server.py" />
+<node pkg="my_actions" name="simple_action_client" type="simple_action_client.py" output="screen" required="true"/>
+</launch>

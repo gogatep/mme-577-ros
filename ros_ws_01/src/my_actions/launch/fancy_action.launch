@@ -1,0 +1,4 @@
+<launch>
+<node pkg="my_actions" name="fancy_action_server" type="fancy_action_server.py" />
+<node pkg="my_actions" name="fancy_action_client" type="fancy_action_client.py" output="screen" required="true"/>
+</launch>
