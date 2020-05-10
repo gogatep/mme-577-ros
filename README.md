@@ -1,6 +1,7 @@
 # Robot Operating System (ROS) Demonstration Package
 
 ROS project for ROS mini-course [supplement to MME 577]
+
 One Paragraph of project description goes here
 
 ## Table of Contents
@@ -42,10 +43,23 @@ What things you need to install the software and how to install them
 
 create a directory for the code. add a src sub directory. and convert the main directory to be your workspace.
 then use git to get the code inside the src folder - or use the download option on github. 
-*[Ubuntu Bionic (18.04.4) LTS] - [OS]
+1. Ubuntu Bionic (18.04.4) LTS
+2. Python 2
+3. ROS Melodic Moreni (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
+4. Set up an workspace
 
 ```
-Give examples
+cd ~ # change directory to user home
+mkdir -p code # -p creates dir only if it doesn't exist
+cd code # change directory into code
+mkdir -p ros_ws_01
+cd ros_ws_01
+mkdir -p src
+cd src
+catkin_init_workspace
+cd .. # up a level to ros_ws
+catkin_make
+source devel/setup.bash
 ```
 
 ### Installing
