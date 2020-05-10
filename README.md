@@ -9,7 +9,7 @@ One Paragraph of project description goes here
   * [Getting Started](#getting-started)
     + [Prerequisites](#prerequisites)
     + [Installing](#installing)
-  * [Running the tests / configuring](#running-the-tests---configuring)
+  * [Package Details And Testing](#package-details-and-testing)
     + [ROS package: my_topics](#ros-package--my-topics)
       - [Getting started](#getting-started)
       - [Usage](#usage)
@@ -88,7 +88,7 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-## Package details and testing
+## Package Details And Testing
 
 Explain how to run the automated tests for this system
 
@@ -104,7 +104,7 @@ launch the launch file.
 
 send information via nodes
 
-#### Break down into end to end tests
+#### Testing
 
 Explain what these tests test and why
 
@@ -135,7 +135,7 @@ launch the launch file.
 
 send information via nodes
 
-#### Break down into end to end tests
+#### Testing
 
 Explain what these tests test and why
 
@@ -165,7 +165,7 @@ launch the launch file.
 
 send information via nodes
 
-#### Break down into end to end tests
+#### Testing
 
 Explain what these tests test and why
 
