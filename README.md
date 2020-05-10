@@ -64,7 +64,7 @@ source devel/setup.bash
 
 ### Installing
 
-copy the files to the source folder in the workspace. [A workspace is shown as an example]
+Download package from github.com and copy the files to the source folder in the workspace. Or use the git clone command. [A workspace is shown as an example]
 
 ```bash
 sudo apt-get install git
@@ -88,7 +88,7 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-## Running the tests / configuring
+## Package details and testing
 
 Explain how to run the automated tests for this system
 
