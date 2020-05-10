@@ -74,14 +74,14 @@ git clone 'https://github.com/gogatep/mme-577-ros/'
 Check if correctly installed using the following demonstration. 
 
 In one shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
 In another shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_topics topic_launch.launch
@@ -109,14 +109,14 @@ send information via nodes
 Explain what these tests test and why
 
 In one shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
 In another shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_topics topic_launch.launch
@@ -140,14 +140,14 @@ send information via nodes
 Explain what these tests test and why
 
 In one shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
 In another shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_services services.launch
@@ -170,21 +170,21 @@ send information via nodes
 Explain what these tests test and why
 
 In one shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
 In another shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_actions action.launch
 
 ```
 In another shell/terminal
-```
+```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_actions fancy_action.launch
