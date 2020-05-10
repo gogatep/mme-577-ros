@@ -2,6 +2,35 @@
 
 ROS project for ROS mini-course [supplement to MME 577]
 
+- [Robot Operating System (ROS) Demonstration Package](#robot-operating-system--ros--demonstration-package)
+  * [Getting Started](#getting-started)
+    + [Prerequisites](#prerequisites)
+    + [Installing](#installing)
+  * [Running the tests / configuring](#running-the-tests---configuring)
+    + [ROS package: my_topics](#ros-package--my-topics)
+      - [Getting started](#getting-started)
+      - [Usage](#usage)
+      - [Break down into end to end tests](#break-down-into-end-to-end-tests)
+      - [And coding style tests](#and-coding-style-tests)
+    + [ROS package: my_services](#ros-package--my-services)
+      - [Getting started](#getting-started-1)
+      - [Usage](#usage-1)
+      - [Break down into end to end tests](#break-down-into-end-to-end-tests-1)
+      - [And coding style tests](#and-coding-style-tests-1)
+    + [ROS package: my_actions](#ros-package--my-actions)
+      - [Getting started](#getting-started-2)
+      - [Usage](#usage-2)
+      - [Break down into end to end tests](#break-down-into-end-to-end-tests-2)
+      - [And coding style tests](#and-coding-style-tests-2)
+  * [Deployment](#deployment)
+  * [Built With](#built-with)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments](#acknowledgments)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 One Paragraph of project description goes here
 
 ## Getting Started
