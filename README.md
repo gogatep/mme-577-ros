@@ -64,21 +64,22 @@ source devel/setup.bash
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+copy the files to the source folder in the workspace. [A workspace is shown as an example]
 
 ```
-Give the example
+sudo apt-get install git
+cd ~/code/ros_ws_01/src
+git clone 'https://github.com/gogatep/mme-577-ros/'
 ```
+Check if correctly installed using the following demonstration. 
 
-And repeat
+In one shell/terminal
+```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roslaunch my_topics topiclaunch.launch
 
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests / configuring
 
