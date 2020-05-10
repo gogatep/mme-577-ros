@@ -4,7 +4,7 @@ ROS project for ROS mini-course [supplement to MME 577]
 One Paragraph of project description goes here
 
 ## Table of Contents
-- [Robot Operating System (ROS) Demonstration Package](#robot-operating-system--ros--demonstration-package)
+<!--- - [Robot Operating System (ROS) Demonstration Package](#robot-operating-system--ros--demonstration-package)--->
   * [Getting Started](#getting-started)
     + [Prerequisites](#prerequisites)
     + [Installing](#installing)
@@ -29,10 +29,6 @@ One Paragraph of project description goes here
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments](#acknowledgments)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 
 ## Getting Started
 
