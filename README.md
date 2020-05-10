@@ -84,7 +84,7 @@ In another shell/terminal
 ```
 cd ~/code/ros_ws_01/
 source devel/setup.bash
-roslaunch my_topics topiclaunch.launch
+roslaunch my_topics topic_launch.launch
 
 ```
 
@@ -108,17 +108,21 @@ send information via nodes
 
 Explain what these tests test and why
 
+In one shell/terminal
 ```
-Give an example
-```
-
-#### And coding style tests
-
-Explain what these tests test and why
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roscore
 
 ```
-Give an example
+In another shell/terminal
 ```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roslaunch my_topics topic_launch.launch
+
+```
+
 ### ROS package: my_services
 
 nodes request services from other nodes
@@ -135,18 +139,20 @@ send information via nodes
 
 Explain what these tests test and why
 
+In one shell/terminal
 ```
-Give an example
-```
-
-#### And coding style tests
-
-Explain what these tests test and why
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roscore
 
 ```
-Give an example
+In another shell/terminal
 ```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roslaunch my_services services.launch
 
+```
 ### ROS package: my_actions
 
 sends action through nodes.
@@ -163,18 +169,27 @@ send information via nodes
 
 Explain what these tests test and why
 
+In one shell/terminal
 ```
-Give an example
-```
-
-#### And coding style tests
-
-Explain what these tests test and why
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roscore
 
 ```
-Give an example
+In another shell/terminal
 ```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roslaunch my_actions action.launch
 
+```
+In another shell/terminal
+```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
+roslaunch my_actions fancy_action.launch
+
+```
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
