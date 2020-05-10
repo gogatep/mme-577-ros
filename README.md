@@ -77,6 +77,13 @@ In one shell/terminal
 ```
 cd ~/code/ros_ws_01/
 source devel/setup.bash
+roscore
+
+```
+In another shell/terminal
+```
+cd ~/code/ros_ws_01/
+source devel/setup.bash
 roslaunch my_topics topiclaunch.launch
 
 ```
