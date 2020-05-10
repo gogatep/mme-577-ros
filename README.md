@@ -20,48 +20,48 @@ launch the launch file.
 
 ## Usage
 
-|Usage information for key methods and commands.|
+send information via nodes
 
 -------------------------------------------------------------------------------------------------------------------------------
 
 # ROS package: my_services
 
-|Short introductory paragraph about your package. What does it do? Why is it useful?|
+nodes request services from other nodes
 
 ## Requirements
 
-|Describe the type of system this will work on. ROS version, OS, etc.|
+linux bionic 18.
 
 ## Installation and configuration
 
-|Instructions for installation and configuration. Assume users know how to install ROS packages and can use `git`.|
+install the package to the source directory of the main file.
 
 ## Getting started
 
-|A short guide to using your package. Include important commands, etc.|
+launch the launch file.
 
 ## Usage
 
-|Usage information for key methods and commands.|
+send information via nodes
 
 -------------------------------------------------------------------------------------------------------------------------------
 
 # ROS package: my_actions
 
-|Short introductory paragraph about your package. What does it do? Why is it useful?|
+sends action through nodes.
 
 ## Requirements
 
-|Describe the type of system this will work on. ROS version, OS, etc.|
+linux bionic 18.
 
 ## Installation and configuration
 
-|Instructions for installation and configuration. Assume users know how to install ROS packages and can use `git`.|
+install the package to the source directory of the main file.
 
 ## Getting started
 
-|A short guide to using your package. Include important commands, etc.|
+launch the launch file.
 
 ## Usage
 
-|Usage information for key methods and commands.|
+send information via nodes
