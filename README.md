@@ -1,72 +1,6 @@
-# MME-577-ROS
+# Robot Operating System (ROS) Demonstration Package
+
 ROS project for ROS mini-course [supplement to MME 577]
-
--------------------------------------------------------------------------------------------------------------------------------
-## ROS package: my_topics
-
-A topic is published by a script to a node and that topic is subscribed to by a script. There are three topics in this 
-
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-```bash
-install the package to the source directory of the main file.
-```
-
-### Getting started
-launch the launch file.
-
-### Usage
-
-send information via nodes
-
--------------------------------------------------------------------------------------------------------------------------------
-
-## ROS package: my_services
-
-nodes request services from other nodes
-
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-
-install the package to the source directory of the main file.
-
-### Getting started
-
-launch the launch file.
-
-### Usage
-
-send information via nodes
-
--------------------------------------------------------------------------------------------------------------------------------
-
-## ROS package: my_actions
-
-sends action through nodes.
-
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-
-install the package to the source directory of the main file.
-
-### Getting started
-
-launch the launch file.
-
-### Usage
-
-send information via nodes
--------------------------------------------------------------------------------------------------------------------------------
-# Project Title
 
 One Paragraph of project description goes here
 
@@ -74,9 +8,14 @@ One Paragraph of project description goes here
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+linux system is needed. git is reccommeded -for convinence. 
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
+
+create a directory for the code. add a src sub directory. and convert the main directory to be your workspace.
+then use git to get the code inside the src folder - or use the download option on github. 
 
 ```
 Give examples
@@ -190,23 +129,13 @@ send information via nodes
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](http://www.python.org/) - main code
+* [ros](https://wiki.ros.org/) - OS 
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Parth Gogate**
 
 ## License
 
@@ -214,7 +143,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Dr.Rico Picone: https://github.com/ricopicone/robotics-book-code
 
