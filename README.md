@@ -39,7 +39,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Running the tests / configuring
 
 Explain how to run the automated tests for this system
 
@@ -59,22 +59,12 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+-------------------------------------------------------------------------------------------------------------------------------
 
 ## ROS package: my_topics
 
 A topic is published by a script to a node and that topic is subscribed to by a script. There are three topics in this 
 
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-```bash
-install the package to the source directory of the main file.
-```
 
 ### Getting started
 launch the launch file.
@@ -88,14 +78,6 @@ send information via nodes
 ## ROS package: my_services
 
 nodes request services from other nodes
-
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-
-install the package to the source directory of the main file.
 
 ### Getting started
 
@@ -111,14 +93,6 @@ send information via nodes
 
 sends action through nodes.
 
-### Requirements
-
-linux bionic 18.
-
-### Installation and configuration
-
-install the package to the source directory of the main file.
-
 ### Getting started
 
 launch the launch file.
@@ -126,6 +100,12 @@ launch the launch file.
 ### Usage
 
 send information via nodes
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -139,7 +119,7 @@ send information via nodes
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
