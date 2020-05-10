@@ -66,7 +66,7 @@ source devel/setup.bash
 
 copy the files to the source folder in the workspace. [A workspace is shown as an example]
 
-```shell
+```bash
 sudo apt-get install git
 cd ~/code/ros_ws_01/src
 git clone 'https://github.com/gogatep/mme-577-ros/'
