@@ -42,6 +42,7 @@ What things you need to install the software and how to install them
 
 create a directory for the code. add a src sub directory. and convert the main directory to be your workspace.
 then use git to get the code inside the src folder - or use the download option on github. 
+*[Ubuntu Bionic (18.04.4) LTS] - [OS]
 
 ```
 Give examples
