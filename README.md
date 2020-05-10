@@ -12,9 +12,9 @@ A topic is published by a script to a node and that topic is subscribed to by a 
 linux bionic 18.
 
 ### Installation and configuration
-'''bash
+```bash
 install the package to the source directory of the main file.
-'''
+```
 
 ### Getting started
 launch the launch file.
