@@ -1,7 +1,9 @@
 # MME-577-ROS
 ROS project for ROS mini-course [supplement to MME 577]
 
-# ROS package: |my_topics|
+-------------------------------------------------------------------------------------------------------------------------------
+
+# ROS package: my_topics
 
 A topic is published by a script to a node and that topic is subscribed to by a script. There are three topics in this 
 
@@ -20,7 +22,9 @@ launch the launch file.
 
 |Usage information for key methods and commands.|
 
-# ROS package: |my_services|
+-------------------------------------------------------------------------------------------------------------------------------
+
+# ROS package: my_services
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
 
@@ -40,7 +44,9 @@ launch the launch file.
 
 |Usage information for key methods and commands.|
 
-# ROS package: |my_actions|
+-------------------------------------------------------------------------------------------------------------------------------
+
+# ROS package: my_actions
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
 
