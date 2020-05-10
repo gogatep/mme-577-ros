@@ -48,7 +48,7 @@ then use git to get the code inside the src folder - or use the download option 
 3. ROS Melodic Moreni (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
 4. Set up an workspace
 
-```
+```bash
 cd ~ # change directory to user home
 mkdir -p code # -p creates dir only if it doesn't exist
 cd code # change directory into code
@@ -66,7 +66,7 @@ source devel/setup.bash
 
 copy the files to the source folder in the workspace. [A workspace is shown as an example]
 
-```
+```bash
 sudo apt-get install git
 cd ~/code/ros_ws_01/src
 git clone 'https://github.com/gogatep/mme-577-ros/'
