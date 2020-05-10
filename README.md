@@ -43,65 +43,88 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
--------------------------------------------------------------------------------------------------------------------------------
-
-## ROS package: my_topics
+### ROS package: my_topics
 
 A topic is published by a script to a node and that topic is subscribed to by a script. There are three topics in this 
 
 
-### Getting started
+#### Getting started
 launch the launch file.
 
-### Usage
+#### Usage
 
 send information via nodes
 
--------------------------------------------------------------------------------------------------------------------------------
+#### Break down into end to end tests
 
-## ROS package: my_services
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+#### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+### ROS package: my_services
 
 nodes request services from other nodes
 
-### Getting started
+#### Getting started
 
 launch the launch file.
 
-### Usage
+#### Usage
 
 send information via nodes
 
--------------------------------------------------------------------------------------------------------------------------------
+#### Break down into end to end tests
 
-## ROS package: my_actions
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+#### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### ROS package: my_actions
 
 sends action through nodes.
 
-### Getting started
+#### Getting started
 
 launch the launch file.
 
-### Usage
+#### Usage
 
 send information via nodes
 
--------------------------------------------------------------------------------------------------------------------------------
+#### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+#### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
 
 ## Deployment
 
