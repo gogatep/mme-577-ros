@@ -64,7 +64,16 @@ Download package from github.com and copy the files to the source folder in the 
 ```bash
 sudo apt-get install git
 cd ~/code/ros_ws_01/src
-git clone 'https://github.com/gogatep/mme-577-ros/'
+git clone 'https://github.com/gogatep/mme-577-ros/my_topics'
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_publisher.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_subscriber.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_publisher.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_subscriber.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/number_publisher.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubled_subscriber.py
+cd ..
+source devel/setup.bash
+catkin_make
 ```
 Check if correctly installed using the following demonstration. 
 
