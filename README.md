@@ -1,8 +1,11 @@
-# Robot Operating System (ROS) Demonstration Package
+# Robot Operating System (ROS) Demonstration Project
 
 ROS project for ROS mini-course [supplement to MME 577]
 
-One Paragraph of project description goes here
+This project is aimed to demonstrate basic features of ROS. The project includes three packages that demonstrate three seperate functionalities of ROS. my_topics,my_services,my_actions. 
+* my_topics: Publishes and Subscribes to topics.
+* my_services: requests and offers services.
+* my_actions: performs requested actions.
 
 ## Table of Contents
 <!--- - [Robot Operating System (ROS) Demonstration Package](#robot-operating-system--ros--demonstration-package)--->
@@ -25,7 +28,6 @@ One Paragraph of project description goes here
       - [Usage](#usage-2)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests-2)
       - [And coding style tests](#and-coding-style-tests-2)
-  * [Deployment](#deployment)
   * [Built With](#built-with)
   * [Authors](#authors)
   * [License](#license)
@@ -33,19 +35,15 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-linux system is needed. git is reccommeded -for convinence. 
+These instructions will get you a copy of the project up and running on your local machine for demonstration and testing purposes. 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The following things are needed to run the project.
 
-create a directory for the code. add a src sub directory. and convert the main directory to be your workspace.
-then use git to get the code inside the src folder - or use the download option on github. 
-1. Ubuntu Bionic (18.04.4) LTS
-2. Python 2
-3. ROS Melodic Moreni (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
+1. Ubuntu Bionic (18.04.4) LTS - the operating system
+2. Python 2 - get python 2.7 from (https://www.python.org/downloads/), python 3 can be used if 2 is unavailable but the code needs to be manually updated for python 3 syntaxt.
+3. ROS Melodic Moreni - get from (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
 4. Set up an workspace
 
 ```bash
@@ -90,11 +88,11 @@ roslaunch my_topics topic_launch.launch
 
 ## Package Details And Testing
 
-Explain how to run the automated tests for this system
+The three packages are explained in further details and test for functionality of each package is shown below.
 
-### ROS package: my_topics
+### ROS package: my topics
 
-A topic is published by a script to a node and that topic is subscribed to by a script. There are three topics in this 
+A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
 
 #### Getting started
@@ -106,7 +104,7 @@ send information via nodes
 
 #### Testing
 
-Explain what these tests test and why
+This runs the package and verifies that it is setup correctly.
 
 In one shell/terminal
 ```bash
@@ -123,7 +121,7 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-### ROS package: my_services
+### ROS package: my services
 
 nodes request services from other nodes
 
@@ -137,7 +135,7 @@ send information via nodes
 
 #### Testing
 
-Explain what these tests test and why
+This runs the package and verifies that it is setup correctly.
 
 In one shell/terminal
 ```bash
@@ -153,7 +151,7 @@ source devel/setup.bash
 roslaunch my_services services.launch
 
 ```
-### ROS package: my_actions
+### ROS package: my actions
 
 sends action through nodes.
 
@@ -167,7 +165,7 @@ send information via nodes
 
 #### Testing
 
-Explain what these tests test and why
+This runs the package and verifies that it is setup correctly.
 
 In one shell/terminal
 ```bash
@@ -190,14 +188,11 @@ source devel/setup.bash
 roslaunch my_actions fancy_action.launch
 
 ```
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 * [Python](http://www.python.org/) - main code
-* [ros](https://wiki.ros.org/) - OS 
+* [ROS](https://wiki.ros.org/) - OS 
 
 
 ## Authors
