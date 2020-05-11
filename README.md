@@ -69,8 +69,16 @@ chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_publisher.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_subscriber.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_publisher.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_subscriber.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/number_publisher.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubler.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubled_subscriber.py
+git clone 'https://github.com/gogatep/mme-577-ros/my_services'
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_client.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_server.py
+git clone 'https://github.com/gogatep/mme-577-ros/my_actions'
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_client.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_client.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_server.py
+chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_server.py
 cd ..
 source devel/setup.bash
 catkin_make
