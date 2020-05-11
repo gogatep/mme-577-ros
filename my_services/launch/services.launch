@@ -1,4 +1,4 @@
 <launch>
 <node pkg="my_services" name="service_server" type="service_server.py" />
-<node pkg="my_services" name="service_client" type="service_client.py" output="screen" required="true"/>
+<node pkg="my_services" name="service_client" type="service_client.py" output="screen" args ="$(arg in)" required="true"/>
 </launch>

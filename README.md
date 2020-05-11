@@ -40,7 +40,7 @@ The following things are needed to run the project.
 
 1. Ubuntu Bionic (18.04.4) LTS - the operating system
 2. Python 2 - get python 2.7 from (https://www.python.org/downloads/)
-3. ROS Melodic Moreni - get from (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
+3. ROS Melodic Moreni - get the 'desktop-full' version from (http://wiki.ros.org/melodic/Installation/Ubuntu) 
 
 
 ### Installing
@@ -69,27 +69,31 @@ chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_publisher.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_subscriber.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubler.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubled_subscriber.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_client.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_server.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_client.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_client.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_server.py
-chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_server.py
+chmod u+x ~/code/ros_ws_01/src/my_services/src/service_client.py
+chmod u+x ~/code/ros_ws_01/src/my_services/src/service_server.py
+chmod u+x ~/code/ros_ws_01/src/my_actions/src/simple_action_client.py
+chmod u+x ~/code/ros_ws_01/src/my_actions/src/fancy_action_client.py
+chmod u+x ~/code/ros_ws_01/src/my_actions/src/simple_action_server.py
+chmod u+x ~/code/ros_ws_01/src/my_actions/src/fancy_action_server.py
 cd ..
 source devel/setup.bash
 catkin_make
+source devel/setup.bash
 
 ```
+
 Check if correctly installed using the following demonstration. 
 
-In one shell/terminal
+If a shell script was used then the source needs to be set manually for the test to work correctly - i.e run the following code manually.
+
+Run the following code in one shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
-In another shell/terminal
+Run the following code in another shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
@@ -99,7 +103,7 @@ roslaunch my_topics topic_launch.launch
 
 ## Package Details And Testing
 
-The three packages are explained in further details and test for functionality of each package is shown below.
+The three packages are explained in further details and test for functionality of each package is shown below. The following code needs to be run manually.
 
 ### my topics
 
@@ -114,14 +118,14 @@ send information via nodes
 
 This runs the package and verifies that it is setup correctly.
 
-In one shell/terminal
+Run the following code in one shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
-In another shell/terminal
+Run the following code in another shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
@@ -142,14 +146,14 @@ send information via nodes
 
 This runs the package and verifies that it is setup correctly.
 
-In one shell/terminal
+Run the following code in one shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
-In another shell/terminal
+Run the following code in another shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
@@ -168,21 +172,21 @@ send information via nodes
 
 This runs the package and verifies that it is setup correctly.
 
-In one shell/terminal
+Run the following code in one shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roscore
 
 ```
-In another shell/terminal
+Run the following code in another shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_actions action.launch
 
 ```
-In another shell/terminal
+And run the following code in yet another shell/terminal
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
