@@ -2,10 +2,10 @@
 
 ROS project for ROS mini-course [supplement to MME 577]
 
-This project is aimed to demonstrate basic features of ROS. The project includes three packages that demonstrate three seperate functionalities of ROS. my_topics,my_services,my_actions. 
+This project is aimed to demonstrate basic features of ROS. The project includes three packages that demonstrate three seperate functionalities of ROS. The packages are: my_topics,my_services,my_actions. 
 * my_topics: Publishes and Subscribes to topics.
-* my_services: requests and offers services.
-* my_actions: performs requested actions.
+* my_services: Requests and offers services.
+* my_actions: Performs requested actions.
 
 ## Table of Contents
 <!--- - [Robot Operating System (ROS) Demonstration Package](#robot-operating-system--ros--demonstration-package)--->
@@ -32,20 +32,21 @@ This project is aimed to demonstrate basic features of ROS. The project includes
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for demonstration and testing purposes. 
+The following instructions will aid in setting up the project on your local machine for demonstration and testing purposes. 
 
 ### Prerequisites
 
 The following things are needed to run the project.
 
-1. Ubuntu Bionic (18.04.4) LTS - the operating system
-2. Python 2 - get python 2.7 from (https://www.python.org/downloads/)
-3. ROS Melodic Moreni - get the 'desktop-full' version from (http://wiki.ros.org/melodic/Installation/Ubuntu) 
+1. Ubuntu Bionic (18.04.4) LTS - The operating system needed.
+2. Python 2 - Get python 2.7 from (https://www.python.org/downloads/)
+3. ROS Melodic Morenia - Get the 'desktop-full' version from (http://wiki.ros.org/melodic/Installation/Ubuntu) 
 
 
 ### Installing
 
-Make sure home directory does not have a 'mme-577-ros' folder or a 'code' folder. Then follow the following code step by step to setup the project on local system - or create and run a shell script containing the following code.
+Make sure home directory does not have a 'mme-577-ros' folder or a 'code' folder. 
+Then, follow the following code step by step to setup the project on local system - or create and run a shell script containing the following code.
 
 ```bash
 sudo apt-get install git
@@ -101,18 +102,25 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-## Package Details And Testing
+## Package Details and Testing
 
-The three packages are explained in further details and test for functionality of each package is shown below. The following code needs to be run manually.
+The three packages are explained in further details and test for functionality of each package is shown below. The following code needs to be run manually. 
 
-### my topics
+The launch file is modified to close on its - i.e close without pressing ctrl+c. So using the launch file for the tests will throw some warnings but it's harmless. And testing can also be done manually using rosrun.
 
-A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
+### My Topics
+
+A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a specific message is published by message_publisher and that topic is subscribed to by message_subscriber. For this project an arbitrary rate of publication was chosen.
+
+And the doubler script publishes the doubled input, which is recieved from a subscribed topic - topic_publisher. So the doubler script initiates a node that does both - subscribing and publishing.
 
 
 #### Usage
 
-send information via nodes
+Each new terminal needs a source command as demonstrated below. 'roscore' command is needed to run ros packages.
+roslaunch command is used to launch package. The syntaxt for the command is: roslaunch <topic> <file.launch>.
+ 
+Topic publication is asynchronous process. The publication and subscribtion are independent of each other.
 
 #### Testing
 
@@ -133,14 +141,19 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-### my services
+### My Services
 
-A service is requested by a script and completed by another.
+A service is made available by the services_server and that service is requested by a client - services_client. This package only has one pair of example scripts. 
+
+While 'topics' allows for very flexible communication, it is not ideal for request and reply. So ros services is used - especially when remote procedure call is needed on a distributed computing network.
 
 
 #### Usage
 
-send information via nodes
+Each new terminal needs a source command as demonstrated below. 'roscore' command is needed to run ros packages.
+roslaunch command is used to launch package. The syntaxt for the command is: roslaunch <topic> <file.launch>.
+ 
+The server and the client are interdependent - i.e they cannot operate without each other. 
 
 #### Testing
 
@@ -154,20 +167,25 @@ roscore
 
 ```
 Run the following code in another shell/terminal.
-There should be no gaps between 'in:="'."hello world" can be changed for a different string input.
+There should be no gaps between ' in:=" '.The string "hello world" can be changed for a different string input.
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
 roslaunch my_services services.launch in:="hello world"
 
 ```
-### my actions
+### My Actions
 
-Simple action stops after 5 seconds and does not print anthing. Fancy action prints time elapsed and time remaining.
+A action is made available by the simple/fancy action servers and that action is requested by an action client. This package has simple and fancy action. Simple action simple print the time elapsed but the fancy action shows time remaining and time elapsed during the execution.
+
+ROS 'actions' are similar to 'services' but they provide feedback during execution. This can be used to gauge progress.
 
 #### Usage
 
-send information via nodes
+Each new terminal needs a source command as demonstrated below. 'roscore' command is needed to run ros packages.
+roslaunch command is used to launch package. The syntaxt for the command is: roslaunch <topic> <file.launch>.
+ 
+The server and the client are interdependent - i.e they cannot operate without each other. 
 
 #### Testing
 
