@@ -145,7 +145,7 @@ roslaunch my_topics topic_launch.launch
 
 A service is made available by the services_server and that service is requested by a client - services_client. This package only has one pair of example scripts. 
 
-While 'topics' allows for very flexible communication, it is not ideal for request and reply. So ros services is used - especially when remote procedure call is needed on a distributed computing network.
+While 'topics' allows for very flexible communication, it is not ideal for request and reply. So ros 'services' is used - especially when remote procedure call is needed on a distributed computing network.
 
 
 #### Usage
@@ -176,7 +176,7 @@ roslaunch my_services services.launch in:="hello world"
 ```
 ### My Actions
 
-A action is made available by the simple/fancy action servers and that action is requested by an action client. This package has simple and fancy action. Simple action simple print the time elapsed but the fancy action shows time remaining and time elapsed during the execution.
+A action is made available by the simple/fancy action servers and that action is requested by an action client. This package has simple and fancy action. Simple action simply print the time elapsed but fancy action shows the time remaining and the time elapsed during the execution.
 
 ROS 'actions' are similar to 'services' but they provide feedback during execution. This can be used to gauge progress.
 
