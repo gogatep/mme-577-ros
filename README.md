@@ -45,7 +45,7 @@ The following things are needed to run the project.
 
 ### Installing
 
-Download package from github.com and copy the files to the source folder in the workspace. Or use the git clone command. [A workspace is shown as an example]
+Make sure home directory does not have a 'mme-577-ros' folder or a 'code' folder. Then follow the following code step by step to setup the project on local system - or create and run a shell script containing the following code.
 
 ```bash
 sudo apt-get install git
@@ -61,8 +61,6 @@ catkin_init_workspace
 cd .. 
 catkin_make
 source devel/setup.bash
-
-
 cd ~/code/ros_ws_01/src
 cp -a  ~/mme-577-ros/.  ~/code/ros_ws_01/src
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_publisher.py
