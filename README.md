@@ -42,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
 The following things are needed to run the project.
 
 1. Ubuntu Bionic (18.04.4) LTS - the operating system
-2. Python 2 - get python 2.7 from (https://www.python.org/downloads/), python 3 can be used if 2 is unavailable but the code needs to be manually updated for python 3 syntaxt.
+2. Python 2 - get python 2.7 from (https://www.python.org/downloads/)
 3. ROS Melodic Moreni - get from (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
 4. Set up an workspace
 
