@@ -1,13 +1,13 @@
 #! /usr/bin/env python
-
+#import modules
 import rospy
 
 import time
 import actionlib
 from my_actions.msg import TimerAction, TimerGoal, TimerResult
 
-
-def do_timer(goal):
+#timer function
+def do_timer(goal):#doesn't show updates
     start_time = time.time()
     time.sleep(goal.time_to_wait.to_sec())
     result = TimerResult()
@@ -15,8 +15,8 @@ def do_timer(goal):
     result.updates_sent = 0
     server.set_succeeded(result)
 
-
+#setup
 rospy.init_node('timer_action_server')
 server = actionlib.SimpleActionServer('timer', TimerAction, do_timer, False)
 server.start()
-rospy.spin()
+rospy.spin()#keeps node alive.
