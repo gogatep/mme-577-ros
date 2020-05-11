@@ -115,7 +115,7 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-### my_services
+### my\_services
 
 A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
