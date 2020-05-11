@@ -12,16 +12,16 @@ This project is aimed to demonstrate basic features of ROS. The project includes
   * [Getting Started](#getting-started)
     + [Prerequisites](#prerequisites)
     + [Installing](#installing)
-  * [Package Details And Testing](#package-details-and-testing)
-    + [ROS package: my_topics](#my-topics)
+  * [ROS Package Details And Testing](#package-details-and-testing)
+    + [my_topics](#my-topics)
       - [Usage](#usage)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests)
       - [And coding style tests](#and-coding-style-tests)
-    + [ROS package: my_services](#my-services)
+    + [my_services](#my-services)
       - [Usage](#usage-1)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests-1)
       - [And coding style tests](#and-coding-style-tests-1)
-    + [ROS package: my_actions](#my-actions)
+    + [my_actions](#my-actions)
       - [Usage](#usage-2)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests-2)
       - [And coding style tests](#and-coding-style-tests-2)
@@ -87,7 +87,7 @@ roslaunch my_topics topic_launch.launch
 
 The three packages are explained in further details and test for functionality of each package is shown below.
 
-### my_topics
+### my topics
 
 A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
@@ -115,9 +115,9 @@ roslaunch my_topics topic_launch.launch
 
 ```
 
-### my\_services
+### my services
 
-A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
+A service is requested by a script and completed by another.
 
 
 #### Usage
@@ -142,9 +142,9 @@ source devel/setup.bash
 roslaunch my_services services.launch
 
 ```
-### my_actions
+### my actions
 
-A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
+Simple action stops after 5 seconds and does not print anthing. Fancy action prints time elapsed and time remaining.
 
 #### Usage
 
