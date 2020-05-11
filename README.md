@@ -41,21 +41,7 @@ The following things are needed to run the project.
 1. Ubuntu Bionic (18.04.4) LTS - the operating system
 2. Python 2 - get python 2.7 from (https://www.python.org/downloads/)
 3. ROS Melodic Moreni - get from (http://wiki.ros.org/melodic/Installation/Ubuntu) [desktop-full]
-4. Set up an workspace
 
-```bash
-cd ~ # change directory to user home
-mkdir -p code # -p creates dir only if it doesn't exist
-cd code # change directory into code
-mkdir -p ros_ws_01
-cd ros_ws_01
-mkdir -p src
-cd src
-catkin_init_workspace
-cd .. # up a level to ros_ws
-catkin_make
-source devel/setup.bash
-```
 
 ### Installing
 
@@ -63,18 +49,30 @@ Download package from github.com and copy the files to the source folder in the 
 
 ```bash
 sudo apt-get install git
+cd ~ 
+git clone 'https://github.com/gogatep/mme-577-ros/'
+mkdir -p code 
+cd code
+mkdir -p ros_ws_01
+cd ros_ws_01
+mkdir -p src
+cd src
+catkin_init_workspace
+cd .. 
+catkin_make
+source devel/setup.bash
+
+
 cd ~/code/ros_ws_01/src
-git clone 'https://github.com/gogatep/mme-577-ros/my_topics'
+cp -a  ~/mme-577-ros/.  ~/code/ros_ws_01/src
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_publisher.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/topic_subscriber.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_publisher.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/message_subscriber.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubler.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/doubled_subscriber.py
-git clone 'https://github.com/gogatep/mme-577-ros/my_services'
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_client.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/service_server.py
-git clone 'https://github.com/gogatep/mme-577-ros/my_actions'
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_client.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_client.py
 chmod u+x ~/code/ros_ws_01/src/my_topics/src/simple_action_server.py
@@ -82,6 +80,7 @@ chmod u+x ~/code/ros_ws_01/src/my_topics/src/fancy_action_server.py
 cd ..
 source devel/setup.bash
 catkin_make
+
 ```
 Check if correctly installed using the following demonstration. 
 
