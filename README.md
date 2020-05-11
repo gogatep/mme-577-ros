@@ -153,11 +153,12 @@ source devel/setup.bash
 roscore
 
 ```
-Run the following code in another shell/terminal
+Run the following code in another shell/terminal.
+There should be no gaps between 'in:="'."hello world" can be changed for a different string input.
 ```bash
 cd ~/code/ros_ws_01/
 source devel/setup.bash
-roslaunch my_services services.launch
+roslaunch my_services services.launch in:="hello world"
 
 ```
 ### my actions
