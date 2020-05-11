@@ -14,17 +14,14 @@ This project is aimed to demonstrate basic features of ROS. The project includes
     + [Installing](#installing)
   * [Package Details And Testing](#package-details-and-testing)
     + [ROS package: my_topics](#ros-package--my-topics)
-      - [Getting started](#getting-started)
       - [Usage](#usage)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests)
       - [And coding style tests](#and-coding-style-tests)
     + [ROS package: my_services](#ros-package--my-services)
-      - [Getting started](#getting-started-1)
       - [Usage](#usage-1)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests-1)
       - [And coding style tests](#and-coding-style-tests-1)
     + [ROS package: my_actions](#ros-package--my-actions)
-      - [Getting started](#getting-started-2)
       - [Usage](#usage-2)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests-2)
       - [And coding style tests](#and-coding-style-tests-2)
@@ -95,9 +92,6 @@ The three packages are explained in further details and test for functionality o
 A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
 
-#### Getting started
-launch the launch file.
-
 #### Usage
 
 send information via nodes
@@ -123,11 +117,8 @@ roslaunch my_topics topic_launch.launch
 
 ### ROS package- my services
 
-nodes request services from other nodes
+A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
-#### Getting started
-
-launch the launch file.
 
 #### Usage
 
@@ -153,11 +144,7 @@ roslaunch my_services services.launch
 ```
 ### ROS package- my actions
 
-sends action through nodes.
-
-#### Getting started
-
-launch the launch file.
+A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
 #### Usage
 
@@ -191,8 +178,8 @@ roslaunch my_actions fancy_action.launch
 
 ## Built With
 
-* [Python](http://www.python.org/) - main code
-* [ROS](https://wiki.ros.org/) - OS 
+* [Python](http://www.python.org/) 
+* [ROS](https://wiki.ros.org/) 
 
 
 ## Authors
