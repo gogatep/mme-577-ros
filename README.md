@@ -13,7 +13,7 @@ This project is aimed to demonstrate basic features of ROS. The project includes
     + [Prerequisites](#prerequisites)
     + [Installing](#installing)
   * [Package Details And Testing](#package-details-and-testing)
-    + [ROS package: my_topics](#ros-package--my-topics)
+    + [ROS package: my_topics](#ros-package:-my-topics)
       - [Usage](#usage)
       - [Break down into end to end tests](#break-down-into-end-to-end-tests)
       - [And coding style tests](#and-coding-style-tests)
@@ -87,7 +87,7 @@ roslaunch my_topics topic_launch.launch
 
 The three packages are explained in further details and test for functionality of each package is shown below.
 
-### ROS package- my topics
+### ROS package: my topics
 
 A topic is published by topics_publisher and that topic is subscribed to by topics_subscriber. Similarly a sepcific message is published by message_publisher and subscribed by message_subscriber. And doubler both subscribes to topic_publisher and publishes the doubled int from topic_publisher to a seperate node. 
 
